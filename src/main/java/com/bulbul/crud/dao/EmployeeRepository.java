@@ -1,6 +1,6 @@
-package com.bulbul.crud.employee.dao;
+package com.bulbul.crud.dao;
 
-import com.bulbul.crud.employee.entity.Employee;
+import com.bulbul.crud.entity.Employee;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

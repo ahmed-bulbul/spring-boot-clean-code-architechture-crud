@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.mapper;
+package com.bulbul.crud.mapper;
 
 import java.util.List;
 

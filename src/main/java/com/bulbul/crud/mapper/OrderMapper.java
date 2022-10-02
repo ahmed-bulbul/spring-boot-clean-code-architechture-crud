@@ -1,7 +1,7 @@
-package com.bulbul.crud.employee.mapper;
+package com.bulbul.crud.mapper;
 
-import com.bulbul.crud.employee.dto.OrderDTO;
-import com.bulbul.crud.employee.entity.Order;
+import com.bulbul.crud.dto.OrderDTO;
+import com.bulbul.crud.entity.Order;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

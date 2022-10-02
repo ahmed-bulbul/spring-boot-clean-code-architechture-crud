@@ -1,6 +1,6 @@
-package com.bulbul.crud.employee.controller;
+package com.bulbul.crud.controller;
 
-import com.bulbul.crud.employee.dto.OrderDTO;
+import com.bulbul.crud.dto.OrderDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.data.domain.Page;

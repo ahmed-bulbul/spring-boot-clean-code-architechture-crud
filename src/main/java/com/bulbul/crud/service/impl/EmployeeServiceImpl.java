@@ -1,11 +1,8 @@
-package com.bulbul.crud.employee.service.impl;
+package com.bulbul.crud.service.impl;
 
-import com.bulbul.crud.employee.dao.EmployeeRepository;
-import com.bulbul.crud.employee.dto.EmployeeDTO;
-import com.bulbul.crud.employee.entity.Employee;
-import com.bulbul.crud.employee.mapper.EmployeeMapper;
-import com.bulbul.crud.employee.service.EmployeeService;
-import org.mapstruct.factory.Mappers;
+import com.bulbul.crud.dao.EmployeeRepository;
+import com.bulbul.crud.entity.Employee;
+import com.bulbul.crud.service.EmployeeService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.service;
+package com.bulbul.crud.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

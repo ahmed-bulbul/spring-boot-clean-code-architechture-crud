@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.entity;
+package com.bulbul.crud.entity;
 
 
 import javax.persistence.Entity;

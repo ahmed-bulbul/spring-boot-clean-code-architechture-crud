@@ -1,8 +1,8 @@
 package com.bulbul.crud.util.builder;
 
 
-import com.bulbul.crud.employee.dto.EmployeeDTO;
-import com.bulbul.crud.employee.entity.Employee;
+import com.bulbul.crud.dto.EmployeeDTO;
+import com.bulbul.crud.entity.Employee;
 import java.util.Arrays;
 import java.util.List;
 

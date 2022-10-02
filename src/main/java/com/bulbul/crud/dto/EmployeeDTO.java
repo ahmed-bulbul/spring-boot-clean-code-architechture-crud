@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.dto;
+package com.bulbul.crud.dto;
 
 public class EmployeeDTO {
     private Long id;

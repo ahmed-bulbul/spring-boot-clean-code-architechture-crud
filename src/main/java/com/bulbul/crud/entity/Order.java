@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.entity;
+package com.bulbul.crud.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

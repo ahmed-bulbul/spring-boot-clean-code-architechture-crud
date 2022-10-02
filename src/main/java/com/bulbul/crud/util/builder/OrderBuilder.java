@@ -1,7 +1,7 @@
 package com.bulbul.crud.util.builder;
 
-import com.bulbul.crud.employee.dto.OrderDTO;
-import com.bulbul.crud.employee.entity.Order;
+import com.bulbul.crud.dto.OrderDTO;
+import com.bulbul.crud.entity.Order;
 
 import java.util.Arrays;
 import java.util.List;

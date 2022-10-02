@@ -1,10 +1,10 @@
-package com.bulbul.crud.employee.controller.impl;
+package com.bulbul.crud.controller.impl;
 
-import com.bulbul.crud.employee.controller.OrderController;
-import com.bulbul.crud.employee.dto.OrderDTO;
-import com.bulbul.crud.employee.entity.Order;
-import com.bulbul.crud.employee.mapper.OrderMapper;
-import com.bulbul.crud.employee.service.OrderService;
+import com.bulbul.crud.controller.OrderController;
+import com.bulbul.crud.dto.OrderDTO;
+import com.bulbul.crud.entity.Order;
+import com.bulbul.crud.mapper.OrderMapper;
+import com.bulbul.crud.service.OrderService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RequestMapping("/api/order")

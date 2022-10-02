@@ -1,6 +1,6 @@
-package com.bulbul.crud.employee.dto;
+package com.bulbul.crud.dto;
 
-import com.bulbul.crud.employee.entity.Employee;
+import com.bulbul.crud.entity.Employee;
 
 public class OrderDTO {
     private Long id;

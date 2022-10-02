@@ -1,10 +1,10 @@
-package com.bulbul.crud.employee.controller.impl;
+package com.bulbul.crud.controller.impl;
 
-import com.bulbul.crud.employee.controller.EmployeeController;
-import com.bulbul.crud.employee.dto.EmployeeDTO;
-import com.bulbul.crud.employee.entity.Employee;
-import com.bulbul.crud.employee.mapper.EmployeeMapper;
-import com.bulbul.crud.employee.service.EmployeeService;
+import com.bulbul.crud.dto.EmployeeDTO;
+import com.bulbul.crud.controller.EmployeeController;
+import com.bulbul.crud.entity.Employee;
+import com.bulbul.crud.mapper.EmployeeMapper;
+import com.bulbul.crud.service.EmployeeService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RequestMapping("/api/employee")
