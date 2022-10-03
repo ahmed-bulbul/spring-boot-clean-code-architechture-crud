@@ -1,18 +1,24 @@
 package com.bulbul.crud.entity;
 
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+
 
 @Entity
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message = "Name can not be blank")
     private String name;
     private String dept;
+
+
     private double salary;
 
     public Employee() {
