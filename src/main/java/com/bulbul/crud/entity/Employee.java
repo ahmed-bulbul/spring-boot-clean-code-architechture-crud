@@ -17,8 +17,6 @@ public class Employee {
     @NotBlank(message = "Name can not be blank")
     private String name;
     private String dept;
-
-
     private double salary;
 
     public Employee() {
