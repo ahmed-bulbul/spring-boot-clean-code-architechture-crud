@@ -1,8 +1,7 @@
 package com.bulbul.crud.dto;
 
-import com.sun.istack.NotNull;
-
 import javax.validation.constraints.NotBlank;
+
 
 public class EmployeeDTO {
     private Long id;

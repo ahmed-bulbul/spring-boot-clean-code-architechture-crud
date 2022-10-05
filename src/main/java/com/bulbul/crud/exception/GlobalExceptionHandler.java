@@ -1,23 +1,16 @@
 package com.bulbul.crud.exception;
 
-
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
 
 @RestControllerAdvice
-@Order(Ordered.HIGHEST_PRECEDENCE)
 public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -29,6 +22,15 @@ public class GlobalExceptionHandler {
         });
         return errorMap;
     }
+
+    //Sql exception handler
+    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public ApiError handleSqlException(SQLIntegrityConstraintViolationException ex) {
+        return new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), "error occurred");
+    }
+
 
 
 }
