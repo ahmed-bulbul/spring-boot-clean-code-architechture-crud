@@ -27,4 +27,12 @@ public class ApiError {
         this.message = message;
         errors = Collections.singletonList(error);
     }
+
+    public ApiError(HttpStatus badRequest) {
+        this.status = badRequest;
+    }
+
+    public <R> void addValidationErrors(R collect) {
+        this.errors = Arrays.asList(collect.toString());
+    }
 }

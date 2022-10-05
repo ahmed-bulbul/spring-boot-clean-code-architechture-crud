@@ -1,7 +1,6 @@
-package com.bulbul.crud.employee.controller.impl;
+package com.bulbul.crud.controller.impl;
 
 
-import com.bulbul.crud.controller.impl.OrderControllerImpl;
 import com.bulbul.crud.entity.Order;
 import com.bulbul.crud.mapper.OrderMapper;
 import com.bulbul.crud.service.OrderService;

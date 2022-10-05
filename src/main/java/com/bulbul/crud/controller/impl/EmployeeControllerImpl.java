@@ -11,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,7 +29,7 @@ public class EmployeeControllerImpl implements EmployeeController {
     @Override
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public EmployeeDTO save(@RequestBody EmployeeDTO employeeDTO) {
+    public EmployeeDTO save(@Valid @RequestBody EmployeeDTO employeeDTO) {
         Employee employee = employeeMapper.asEntity(employeeDTO);
         return employeeMapper.asDTO(employeeService.save(employee));
     }

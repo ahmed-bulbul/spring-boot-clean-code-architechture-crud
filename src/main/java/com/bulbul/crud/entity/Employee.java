@@ -14,7 +14,7 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotBlank(message = "Name can not be blank")
+
     private String name;
     private String dept;
     private double salary;

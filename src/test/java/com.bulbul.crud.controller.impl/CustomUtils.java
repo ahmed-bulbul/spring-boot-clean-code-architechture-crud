@@ -1,4 +1,4 @@
-package com.bulbul.crud.employee.controller.impl;
+package com.bulbul.crud.controller.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

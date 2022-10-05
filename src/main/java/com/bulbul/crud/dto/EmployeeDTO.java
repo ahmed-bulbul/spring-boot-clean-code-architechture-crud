@@ -6,6 +6,7 @@ import javax.validation.constraints.NotBlank;
 
 public class EmployeeDTO {
     private Long id;
+    @NotBlank(message = "Name can not be blank")
     private String name;
     private String dept;
 
